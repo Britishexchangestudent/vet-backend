@@ -1,0 +1,32 @@
+GET http://localhost:8000/todos
+
+###
+
+
+POST http://localhost:8000/todos/new
+Content-Type: application/json
+
+{
+    "text": "Hello, world!"
+}
+
+###
+
+DELETE http://localhost:8000/todos/delete/632976779b42a9a7ca2c85cc
+
+###
+
+GET http://localhost:8000/todos/complete/632976859b42a9a7ca2c85cf
+
+###
+
+POST http://localhost:8000/todo/632976859b42a9a7ca2c85cf/subtodo/new
+Content-Type: application/json
+
+{
+    "text": "Hello, sub-world 2!"
+}
+
+###
+
+GET http://localhost:8000/todo/632976859b42a9a7ca2c85cf/subtodo/632978565e592206682065d4
